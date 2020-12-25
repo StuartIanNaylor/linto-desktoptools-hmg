@@ -13,6 +13,9 @@ sudo apt update
 sudo apt install cuda-10-1
 sudo apt install libcudnn7`
 
+`pip install -U pip
+pip install -U setuptools`
+
 
 ![version](https://img.shields.io/github/manifest-json/v/linto-ai/hmg)
 
