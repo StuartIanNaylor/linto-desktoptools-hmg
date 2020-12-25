@@ -21,6 +21,7 @@ sudo apt install libcudnn7
 ```
 pip install -U pip
 pip install -U setuptools
+pip install h5py==2.10.0
 ```
 
 
