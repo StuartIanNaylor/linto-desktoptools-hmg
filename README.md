@@ -1,3 +1,19 @@
+Use tensorflow 2.1.2 and Cuda 10.1
+For Cuda install see https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130
+
+`sudo rm /etc/apt/sources.list.d/cuda*
+sudo apt remove --autoremove nvidia-cuda-toolkit
+sudo apt remove --autoremove nvidia-*`
+
+`sudo apt update
+sudo add-apt-repository ppa:graphics-driverssudo apt-key adv --fetch-keys  http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pubsudo bash -c 'echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/cuda.list'sudo bash -c 'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/cuda_learn.list'`
+
+`
+sudo apt update
+sudo apt install cuda-10-1
+sudo apt install libcudnn7`
+
+
 ![version](https://img.shields.io/github/manifest-json/v/linto-ai/hmg)
 
 # Hotword Model Generator
